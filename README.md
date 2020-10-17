@@ -2,4 +2,4 @@
 
 - Built using React
 - API used TMDB
-- Demo https://
+- Demo https://ourflix.netlify.app
