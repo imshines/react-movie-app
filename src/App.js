@@ -7,7 +7,6 @@ import Home from './views/Home';
 import Movies from './views/Movies';
 import Tv from './views/Tv';
 import Search from './views/Search';
-import MyList from './views/MyList';
 import Details from './views/Details';
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
               <li><NavLink className="nav-item" to='/movies'>Movies</NavLink></li>
               <li><NavLink className="nav-item" to='/tv'>TV</NavLink></li>
               <li><NavLink className="nav-item" to='/search'>Search</NavLink></li>
-              <li><NavLink className="nav-item" to='/mylist'>My List</NavLink></li>
             </ul>
           </nav>
           <Button className="mobile-nav-button" onClick={() => { setMenu(!menu) }}>Menu</Button>
@@ -34,7 +32,6 @@ function App() {
               <li><NavLink className="mobile-nav-item" to='/movies'>Movies</NavLink></li>
               <li><NavLink className="mobile-nav-item" to='/tv'>TV</NavLink></li>
               <li><NavLink className="mobile-nav-item" to='/search'>Search</NavLink></li>
-              <li><NavLink className="mobile-nav-item" to='/mylist'>My List</NavLink></li>
             </ul>
           </nav>
         </header>
@@ -45,7 +42,6 @@ function App() {
               <Route exact path='/movies' component={Movies} />
               <Route exact path='/tv' component={Tv} />
               <Route exact path='/search' component={Search} />
-              <Route exact path='/mylist' component={MyList} />
               <Route exact path='/details/:id' component={Details} />
             </Switch>
           </div>
